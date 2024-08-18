@@ -1,0 +1,1008 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugEditor|Android-arm64-v8a">
+      <Configuration>DebugEditor</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugEditor|Win32">
+      <Configuration>DebugEditor</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugEditor|x64">
+      <Configuration>DebugEditor</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Android-arm64-v8a">
+      <Configuration>Debug</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseEditor|Android-arm64-v8a">
+      <Configuration>ReleaseEditor</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseEditor|Win32">
+      <Configuration>ReleaseEditor</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseEditor|x64">
+      <Configuration>ReleaseEditor</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Android-arm64-v8a">
+      <Configuration>Release</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F08D83DC-D5D1-469D-BA01-BEAA593596CF}</ProjectGuid>
+    <RootNamespace>Octave</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Engine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugEditor|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseEditor|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <AndroidMinSdkVersion>24</AndroidMinSdkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugEditor|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugEditor|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <AndroidMinSdkVersion>24</AndroidMinSdkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <AndroidMinSdkVersion>24</AndroidMinSdkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseEditor|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseEditor|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <AndroidMinSdkVersion>24</AndroidMinSdkVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugEditor|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseEditor|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugEditor|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugEditor|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseEditor|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseEditor|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)Build\Windows\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Intermediate\Windows\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugEditor|Win32'">
+    <OutDir>$(ProjectDir)Build\Windows\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Intermediate\Windows\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)Build\Windows\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Intermediate\Windows\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseEditor|Win32'">
+    <OutDir>$(ProjectDir)Build\Windows\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Intermediate\Windows\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)Build\Windows\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Intermediate\Windows\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android-arm64-v8a'">
+    <OutDir>$(ProjectDir)Build\Android\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)Intermediate\Android\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugEditor|x64'">
+    <OutDir>$(ProjectDir)Build\Windows\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Intermediate\Windows\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugEditor|Android-arm64-v8a'">
+    <OutDir>$(ProjectDir)Build\Android\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)Intermediate\Android\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)Build\Windows\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Intermediate\Windows\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android-arm64-v8a'">
+    <OutDir>$(ProjectDir)Build\Android\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)Intermediate\Android\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseEditor|x64'">
+    <OutDir>$(ProjectDir)Build\Windows\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Intermediate\Windows\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseEditor|Android-arm64-v8a'">
+    <OutDir>$(ProjectDir)Build\Android\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)Intermediate\Android\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(VULKAN_SDK)/Include;$(ProjectDir)Include;$(ProjectDir)Include/Engine;$(ProjectDir)../External;$(ProjectDir)../External/Assimp;$(ProjectDir)../External/Bullet;$(ProjectDir)Include/Editor;$(ProjectDir)../External/Lua;$(ProjectDir)../External/Vorbis;$(ProjectDir)../External/EOS/Include/;$(ProjectDir)../External/Steam/public/steam/</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS=1;API_VULKAN=1;EDITOR=0;WIN32;_CRT_SECURE_NO_WARNINGS;VK_USE_PLATFORM_WIN32_KHR;GLM_FORCE_RADIANS;GLM_FORCE_DEPTH_ZERO_TO_ONE;%(PreprocessorDefinitions);NOMINMAX</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>vulkan-1.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin32;$(SolutionDir)External/lib/Lib32/;$(VULKAN_SDK)/Lib32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>spirv-cross-cored.lib;shaderc_combinedd.lib;vulkan-1.lib;Xinput.lib;Xaudio2.lib;Ws2_32.lib;Iphlpapi.lib;Shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin32;$(SolutionDir)Engine/External/lib/Lib/;$(VULKAN_SDK)/Lib32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugEditor|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(VULKAN_SDK)/Include;$(ProjectDir)Include;$(ProjectDir)Include/Engine;$(ProjectDir)../External;$(ProjectDir)../External/Assimp;$(ProjectDir)../External/Bullet;$(ProjectDir)Include/Editor;$(ProjectDir)../External/Lua;$(ProjectDir)../External/Vorbis;$(ProjectDir)../External/EOS/Include/;$(ProjectDir)../External/Steam/public/steam/</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS=1;API_VULKAN=1;EDITOR=1;WIN32;_CRT_SECURE_NO_WARNINGS;VK_USE_PLATFORM_WIN32_KHR;GLM_FORCE_RADIANS;GLM_FORCE_DEPTH_ZERO_TO_ONE;%(PreprocessorDefinitions);NOMINMAX</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>vulkan-1.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin32;$(SolutionDir)External/lib/Lib32/;$(VULKAN_SDK)/Lib32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>spirv-cross-cored.lib;shaderc_combinedd.lib;vulkan-1.lib;Xinput.lib;Xaudio2.lib;Ws2_32.lib;Iphlpapi.lib;Shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin32;$(SolutionDir)Engine/External/lib/Lib/;$(VULKAN_SDK)/Lib32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)../External;$(VULKAN_SDK)/Include;$(ProjectDir)Source;$(ProjectDir)Source/Engine;$(ProjectDir)../External/Assimp;$(ProjectDir)../External/Bullet;$(ProjectDir)Source/Editor;$(ProjectDir)../External/Lua;$(ProjectDir)../External/Vorbis;;$(ProjectDir)../External/EOS/Include/;$(ProjectDir)../External/Steam/public/steam/</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NET_PLATFORM_STEAM=0;PLATFORM_WINDOWS=1;API_VULKAN=1;EDITOR=0;WIN32;_CRT_SECURE_NO_WARNINGS;VK_USE_PLATFORM_WIN32_KHR;GLM_FORCE_RADIANS;GLM_FORCE_DEPTH_ZERO_TO_ONE;%(PreprocessorDefinitions);NOMINMAX</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>vulkan-1.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin;$(SolutionDir)External/lib/Lib/;$(VULKAN_SDK)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin;$(SolutionDir)Engine/External/lib/Lib/;$(VULKAN_SDK)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android-arm64-v8a'">
+    <ClCompile>
+      <WarningLevel>EnableWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)Include;$(ProjectDir)Include/Engine;$(ProjectDir)../External;$(ProjectDir)../External/Assimp;$(ProjectDir)../External/Bullet;$(ProjectDir)Include/Editor;$(ProjectDir)../External/Lua;$(AndroidSdk)/ndk/$(AndroidNdkVersion)/sources/android/native_app_glue;$(ProjectDir)../External/Vorbis</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_ANDROID=1;API_VULKAN=1;EDITOR=0;WIN32;_CRT_SECURE_NO_WARNINGS;VK_USE_PLATFORM_ANDROID_KHR;GLM_FORCE_RADIANS;GLM_FORCE_DEPTH_ZERO_TO_ONE;%(PreprocessorDefinitions);NOMINMAX</PreprocessorDefinitions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>vulkan-1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin;$(SolutionDir)External/lib/Lib/;$(VULKAN_SDK)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>vulkan-1.lib;Xinput.lib;Xaudio2.lib;Ws2_32.lib;Iphlpapi.lib;Shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin;$(SolutionDir)Engine/External/lib/Lib/;$(VULKAN_SDK)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugEditor|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)../External;$(VULKAN_SDK)/Include;$(ProjectDir)Source;$(ProjectDir)Source/Engine;$(ProjectDir)../External/Assimp;$(ProjectDir)../External/Bullet;$(ProjectDir)Source/Editor;$(ProjectDir)../External/Lua;$(ProjectDir)../External/Vorbis;$(ProjectDir)../External/Imgui;$(ProjectDir)../External/EOS/Include/;$(ProjectDir)../External/Steam/public/steam/</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NET_PLATFORM_STEAM=0;PLATFORM_WINDOWS=1;API_VULKAN=1;EDITOR=1;WIN32;_CRT_SECURE_NO_WARNINGS;VK_USE_PLATFORM_WIN32_KHR;GLM_FORCE_RADIANS;GLM_FORCE_DEPTH_ZERO_TO_ONE;%(PreprocessorDefinitions);NOMINMAX</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>vulkan-1.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin;$(SolutionDir)External/lib/Lib/;$(VULKAN_SDK)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugEditor|Android-arm64-v8a'">
+    <ClCompile>
+      <WarningLevel>EnableWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)Include;$(ProjectDir)Include/Engine;$(ProjectDir)../External;$(ProjectDir)../External/Assimp;$(ProjectDir)../External/Bullet;$(ProjectDir)Include/Editor;$(ProjectDir)../External/Lua;$(AndroidSdk)/ndk/$(AndroidNdkVersion)/sources/android/native_app_glue;$(ProjectDir)../External/Vorbis</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_ANDROID=1;API_VULKAN=1;EDITOR=1;WIN32;_CRT_SECURE_NO_WARNINGS;VK_USE_PLATFORM_ANDROID_KHR;GLM_FORCE_RADIANS;GLM_FORCE_DEPTH_ZERO_TO_ONE;%(PreprocessorDefinitions);NOMINMAX</PreprocessorDefinitions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>vulkan-1.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin;$(SolutionDir)External/lib/Lib/;$(VULKAN_SDK)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>vulkan-1.lib;Xinput.lib;Xaudio2.lib;Ws2_32.lib;Iphlpapi.lib;Shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin;$(SolutionDir)Engine/External/lib/Lib/;$(VULKAN_SDK)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(VULKAN_SDK)/Include;$(ProjectDir)Include;$(ProjectDir)Include/Engine;$(ProjectDir)../External;$(ProjectDir)../External/Assimp;$(ProjectDir)../External/Bullet;$(ProjectDir)Include/Editor;$(ProjectDir)../External/Lua;$(ProjectDir)../External/Vorbis;$(ProjectDir)../External/EOS/Include/;$(ProjectDir)../External/Steam/public/steam/</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS=1;API_VULKAN=1;EDITOR=0;WIN32;_CRT_SECURE_NO_WARNINGS;VK_USE_PLATFORM_WIN32_KHR;GLM_FORCE_RADIANS;GLM_FORCE_DEPTH_ZERO_TO_ONE;%(PreprocessorDefinitions);NOMINMAX</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>vulkan-1.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin32;$(SolutionDir)External/lib/Lib32/;$(VULKAN_SDK)/Lib32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>spirv-cross-core.lib;shaderc_combined.lib;vulkan-1.lib;Xinput.lib;Xaudio2.lib;Ws2_32.lib;Iphlpapi.lib;Shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin32;$(SolutionDir)Engine/External/lib/Lib/;$(VULKAN_SDK)/Lib32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseEditor|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(VULKAN_SDK)/Include;$(ProjectDir)Include;$(ProjectDir)Include/Engine;$(ProjectDir)../External;$(ProjectDir)../External/Assimp;$(ProjectDir)../External/Bullet;$(ProjectDir)Include/Editor;$(ProjectDir)../External/Lua;$(ProjectDir)../External/Vorbis;$(ProjectDir)../External/EOS/Include/;$(ProjectDir)../External/Steam/public/steam/</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS=1;API_VULKAN=1;EDITOR=1;WIN32;_CRT_SECURE_NO_WARNINGS;VK_USE_PLATFORM_WIN32_KHR;GLM_FORCE_RADIANS;GLM_FORCE_DEPTH_ZERO_TO_ONE;%(PreprocessorDefinitions);NOMINMAX</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>vulkan-1.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin32;$(SolutionDir)External/lib/Lib32/;$(VULKAN_SDK)/Lib32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>spirv-cross-core.lib;shaderc_combined.lib;vulkan-1.lib;Xinput.lib;Xaudio2.lib;Ws2_32.lib;Iphlpapi.lib;Shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin32;$(SolutionDir)Engine/External/lib/Lib/;$(VULKAN_SDK)/Lib32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)../External;$(VULKAN_SDK)/Include;$(ProjectDir)Source;$(ProjectDir)Source/Engine;$(ProjectDir)../External/Assimp;$(ProjectDir)../External/Bullet;$(ProjectDir)Source/Editor;$(ProjectDir)../External/Lua;$(ProjectDir)../External/Vorbis;;$(ProjectDir)../External/EOS/Include/;$(ProjectDir)../External/Steam/public/steam/</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NET_PLATFORM_STEAM=0;PLATFORM_WINDOWS=1;API_VULKAN=1;EDITOR=0;WIN32;_CRT_SECURE_NO_WARNINGS;VK_USE_PLATFORM_WIN32_KHR;GLM_FORCE_RADIANS;GLM_FORCE_DEPTH_ZERO_TO_ONE;%(PreprocessorDefinitions);NOMINMAX</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>vulkan-1.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin;$(SolutionDir)Engine/External/lib/Lib/;$(VULKAN_SDK)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android-arm64-v8a'">
+    <ClCompile>
+      <WarningLevel>EnableWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)Include;$(ProjectDir)Include/Engine;$(ProjectDir)../External;$(ProjectDir)../External/Assimp;$(ProjectDir)../External/Bullet;$(ProjectDir)Include/Editor;$(ProjectDir)../External/Lua;$(AndroidSdk)/ndk/$(AndroidNdkVersion)/sources/android/native_app_glue;$(ProjectDir)../External/Vorbis</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_ANDROID=1;API_VULKAN=1;EDITOR=0;WIN32;_CRT_SECURE_NO_WARNINGS;VK_USE_PLATFORM_ANDROID_KHR;GLM_FORCE_RADIANS;GLM_FORCE_DEPTH_ZERO_TO_ONE;%(PreprocessorDefinitions);NOMINMAX</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>vulkan-1.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>vulkan-1.lib;Xinput.lib;Xaudio2.lib;Ws2_32.lib;Iphlpapi.lib;Shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin;$(SolutionDir)Engine/External/lib/Lib/;$(VULKAN_SDK)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseEditor|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)../External;$(VULKAN_SDK)/Include;$(ProjectDir)Source;$(ProjectDir)Source/Engine;$(ProjectDir)../External/Assimp;$(ProjectDir)../External/Bullet;$(ProjectDir)Source/Editor;$(ProjectDir)../External/Lua;$(ProjectDir)../External/Vorbis;$(ProjectDir)../External/Imgui;$(ProjectDir)../External/EOS/Include/;$(ProjectDir)../External/Steam/public/steam/</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NET_PLATFORM_STEAM=0;PLATFORM_WINDOWS=1;API_VULKAN=1;EDITOR=1;WIN32;_CRT_SECURE_NO_WARNINGS;VK_USE_PLATFORM_WIN32_KHR;GLM_FORCE_RADIANS;GLM_FORCE_DEPTH_ZERO_TO_ONE;%(PreprocessorDefinitions);NOMINMAX</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>vulkan-1.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin;$(SolutionDir)Engine/External/lib/Lib/;$(VULKAN_SDK)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseEditor|Android-arm64-v8a'">
+    <ClCompile>
+      <WarningLevel>EnableWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)Include;$(ProjectDir)Include/Engine;$(ProjectDir)../External;$(ProjectDir)../External/Assimp;$(ProjectDir)../External/Bullet;$(ProjectDir)Include/Editor;$(ProjectDir)../External/Lua;$(AndroidSdk)/ndk/$(AndroidNdkVersion)/sources/android/native_app_glue;$(ProjectDir)../External/Vorbis</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_ANDROID=1;API_VULKAN=1;EDITOR=1;WIN32;_CRT_SECURE_NO_WARNINGS;VK_USE_PLATFORM_ANDROID_KHR;GLM_FORCE_RADIANS;GLM_FORCE_DEPTH_ZERO_TO_ONE;%(PreprocessorDefinitions);NOMINMAX</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>vulkan-1.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>vulkan-1.lib;Xinput.lib;Xaudio2.lib;Ws2_32.lib;Iphlpapi.lib;Shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)/Bin;$(SolutionDir)Engine/External/lib/Lib/;$(VULKAN_SDK)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\External\Imgui\imgui.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Android-arm64-v8a'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Android-arm64-v8a'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\External\Imgui\imgui_demo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Android-arm64-v8a'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Android-arm64-v8a'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\External\Imgui\imgui_draw.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Android-arm64-v8a'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Android-arm64-v8a'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\External\Imgui\imgui_tables.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Android-arm64-v8a'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Android-arm64-v8a'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\External\Imgui\imgui_widgets.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Android-arm64-v8a'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Android-arm64-v8a'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\External\Imgui\misc\cpp\imgui_stdlib.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Android-arm64-v8a'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Android-arm64-v8a'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Source\Audio\Android\Audio_Android.cpp" />
+    <ClCompile Include="Source\Audio\Audio.cpp" />
+    <ClCompile Include="Source\Audio\Linux\Audio_Linux.cpp" />
+    <ClCompile Include="Source\Audio\Windows\Audio_Windows.cpp" />
+    <ClCompile Include="Source\Editor\ActionManager.cpp" />
+    <ClCompile Include="Source\Editor\CustomImgui.cpp" />
+    <ClCompile Include="Source\Editor\EditorImgui.cpp" />
+    <ClCompile Include="Source\Editor\EditorMain.cpp" />
+    <ClCompile Include="Source\Editor\EditorState.cpp" />
+    <ClCompile Include="Source\Editor\EditorUtils.cpp" />
+    <ClCompile Include="Source\Editor\Grid.cpp" />
+    <ClCompile Include="Source\Editor\InputManager.cpp" />
+    <ClCompile Include="Source\Editor\PaintManager.cpp" />
+    <ClCompile Include="Source\Editor\Viewport2d.cpp" />
+    <ClCompile Include="Source\Editor\Viewport3d.cpp" />
+    <ClCompile Include="Source\Engine\Asset.cpp" />
+    <ClCompile Include="Source\Engine\AssetDir.cpp" />
+    <ClCompile Include="Source\Engine\AssetManager.cpp" />
+    <ClCompile Include="Source\Engine\AssetRef.cpp" />
+    <ClCompile Include="Source\Engine\Assets\Font.cpp" />
+    <ClCompile Include="Source\Engine\Assets\MaterialBase.cpp" />
+    <ClCompile Include="Source\Engine\Assets\MaterialInstance.cpp" />
+    <ClCompile Include="Source\Engine\Assets\Material.cpp" />
+    <ClCompile Include="Source\Engine\Assets\MaterialLite.cpp" />
+    <ClCompile Include="Source\Engine\Assets\ParticleSystem.cpp" />
+    <ClCompile Include="Source\Engine\Assets\ParticleSystemInstance.cpp" />
+    <ClCompile Include="Source\Engine\Assets\Scene.cpp" />
+    <ClCompile Include="Source\Engine\Assets\SkeletalMesh.cpp" />
+    <ClCompile Include="Source\Engine\Assets\SoundWave.cpp" />
+    <ClCompile Include="Source\Engine\Assets\StaticMesh.cpp" />
+    <ClCompile Include="Source\Engine\Assets\Texture.cpp" />
+    <ClCompile Include="Source\Engine\AudioManager.cpp" />
+    <ClCompile Include="Source\Engine\Clock.cpp" />
+    <ClCompile Include="Source\Engine\Datum.cpp" />
+    <ClCompile Include="Source\Engine\Engine.cpp" />
+    <ClCompile Include="Source\Engine\EngineTypes.cpp" />
+    <ClCompile Include="Source\Engine\CameraFrustum.cpp" />
+    <ClCompile Include="Source\Engine\InputDevices.cpp" />
+    <ClCompile Include="Source\Engine\Log.cpp" />
+    <ClCompile Include="Source\Engine\Maths.cpp" />
+    <ClCompile Include="Source\Engine\NetDatum.cpp" />
+    <ClCompile Include="Source\Engine\NetFunc.cpp" />
+    <ClCompile Include="Source\Engine\NetMsg.cpp" />
+    <ClCompile Include="Source\Engine\NetworkManager.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\3D\Audio3d.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\3D\Box3d.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\3D\Camera3d.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\3D\Capsule3d.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\3D\DirectionalLight3d.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\3D\Light3d.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\3D\Mesh3d.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\3D\Particle3d.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\3D\PointLight3d.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\3D\Primitive3d.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\3D\ShadowMesh3d.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\3D\SkeletalMesh3d.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\3D\Sphere3d.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\3D\StaticMesh3d.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\3D\TestSpinner.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\3D\TextMesh3d.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\3D\Node3d.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\Node.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\Widgets\ArrayWidget.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\Widgets\Button.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\Widgets\Canvas.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\Widgets\CheckBox.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\Widgets\ComboBox.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\Widgets\Console.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\Widgets\ModalList.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\Widgets\Poly.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\Widgets\PolyRect.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\Widgets\Quad.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\Widgets\Selector.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\Widgets\StatsOverlay.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\Widgets\Text.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\Widgets\TextField.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\Widgets\VerticalList.cpp" />
+    <ClCompile Include="Source\Engine\Nodes\Widgets\Widget.cpp" />
+    <ClCompile Include="Source\Engine\ObjectRef.cpp" />
+    <ClCompile Include="Source\Engine\Profiler.cpp" />
+    <ClCompile Include="Source\Engine\Property.cpp" />
+    <ClCompile Include="Source\Engine\Rect.cpp" />
+    <ClCompile Include="Source\Engine\Renderer.cpp" />
+    <ClCompile Include="Source\Engine\Script.cpp" />
+    <ClCompile Include="Source\Engine\ScriptAutoReg.cpp" />
+    <ClCompile Include="Source\Engine\ScriptFunc.cpp" />
+    <ClCompile Include="Source\Engine\ScriptUtils.cpp" />
+    <ClCompile Include="Source\Engine\stb_implementation.cpp" />
+    <ClCompile Include="Source\Engine\Stream.cpp" />
+    <ClCompile Include="Source\Engine\TableDatum.cpp" />
+    <ClCompile Include="Source\Engine\TimerManager.cpp" />
+    <ClCompile Include="Source\Engine\Utilities.cpp" />
+    <ClCompile Include="Source\Engine\World.cpp" />
+    <ClCompile Include="Source\Graphics\GraphicsUtils.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\PostProcessChain.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\PostProcess\BlurPass.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\PostProcess\PostProcessPass.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\PostProcess\TonemapPass.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\RenderPassCache.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\VramAllocator.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\Buffer.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\DescriptorPool.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\DescriptorSet.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\DestroyQueue.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\Image.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\DescriptorLayoutCache.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\MaterialPipelineCache.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\Pipeline.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\PipelineConfigs.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\PipelineCache.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\RayTracer.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\MultiBuffer.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\Shader.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\VulkanContext.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\Graphics_Vulkan.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\VulkanTypes.cpp" />
+    <ClCompile Include="Source\Graphics\Vulkan\VulkanUtils.cpp" />
+    <ClCompile Include="Source\Input\Android\Input_Android.cpp" />
+    <ClCompile Include="Source\Input\Input.cpp" />
+    <ClCompile Include="Source\Input\InputUtils.cpp" />
+    <ClCompile Include="Source\Input\Linux\Input_Linux.cpp" />
+    <ClCompile Include="Source\Input\Windows\Input_Windows.cpp" />
+    <ClCompile Include="Source\LuaBindings\AssetManager_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Asset_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Audio3d_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Audio_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Box3d_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Button_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Camera3d_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Canvas_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Capsule3d_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\CheckBox_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\ComboBox_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\MaterialBase_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Material_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\NodeRef_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\DirectionalLight3d_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Font_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Input_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Light3d_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Log_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\LuaBindings.cpp" />
+    <ClCompile Include="Source\LuaBindings\LuaTypeCheck.cpp" />
+    <ClCompile Include="Source\LuaBindings\LuaUtils.cpp" />
+    <ClCompile Include="Source\LuaBindings\Node_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Engine_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\MaterialInstance_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\MaterialLite_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Maths_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Mesh3d_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Misc_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Network_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Particle3d_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\ParticleSystemInstance_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\ParticleSystem_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\PointLight3d_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\PolyRect_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Poly_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Primitive3d_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Quad_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Rect_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Renderer_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Scene_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Script_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Selector_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\ShadowMesh3d_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\SkeletalMesh3d_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\SkeletalMesh_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\SoundWave_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Sphere3d_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\StaticMesh3d_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\StaticMesh_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Stream_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\System_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\TextField_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\TextMesh3d_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Texture_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Text_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\TimerManager_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Node3d_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Vector_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\VerticalList_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\Widget_Lua.cpp" />
+    <ClCompile Include="Source\LuaBindings\World_Lua.cpp" />
+    <ClCompile Include="Source\Network\Android\Network_Android.cpp" />
+    <ClCompile Include="Source\Network\Linux\Network_Linux.cpp" />
+    <ClCompile Include="Source\Network\NetPlatform.cpp" />
+    <ClCompile Include="Source\Network\NetPlatformEpic.cpp" />
+    <ClCompile Include="Source\Network\NetPlatformSteam.cpp" />
+    <ClCompile Include="Source\Network\Windows\Network_Windows.cpp" />
+    <ClCompile Include="Source\System\Android\System_Android.cpp" />
+    <ClCompile Include="Source\System\Linux\System_Linux.cpp" />
+    <ClCompile Include="Source\System\Windows\System_Windows.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\src\ColorGeometry.frag" />
+    <None Include="Shaders\src\Common.glsl" />
+    <None Include="Shaders\src\Depth.frag" />
+    <None Include="Shaders\src\Depth.vert" />
+    <None Include="Shaders\src\Forward.frag" />
+    <None Include="Shaders\src\Forward.vert" />
+    <None Include="Shaders\src\HitCheck.frag" />
+    <None Include="Shaders\src\Line.frag" />
+    <None Include="Shaders\src\Line.vert" />
+    <None Include="Shaders\src\NullPostProcess.frag" />
+    <None Include="Shaders\src\Quad.frag" />
+    <None Include="Shaders\src\Quad.vert" />
+    <None Include="Shaders\src\ScreenRect.vert" />
+    <None Include="Shaders\src\SelectedGeometry.frag" />
+    <None Include="Shaders\src\ShadowDepth.vert" />
+    <None Include="Shaders\src\Text.frag" />
+    <None Include="Shaders\src\Text.vert" />
+    <None Include="Shaders\src\Tonemap.frag" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\External\Bullet\Bullet.vcxproj">
+      <Project>{62666e6c-3f33-45a2-88a6-7a4dac19e439}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\External\LuaSocket\LuaSocket.vcxproj">
+      <Project>{df4f0435-e38d-465d-9bad-1382fe0e2624}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\External\Lua\Lua.vcxproj">
+      <Project>{76b204c0-0490-46fa-ad50-8030f398a5ba}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\External\Vorbis\Vorbis.vcxproj">
+      <Project>{9cc47acb-dfde-4fda-adae-ce660f8dd450}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Audio\Audio.h" />
+    <ClInclude Include="Source\Audio\AudioConstants.h" />
+    <ClInclude Include="Source\Audio\AudioTypes.h" />
+    <ClInclude Include="Source\Editor\ActionManager.h" />
+    <ClInclude Include="Source\Editor\CustomImgui.h" />
+    <ClInclude Include="Source\Editor\EditorConstants.h" />
+    <ClInclude Include="Source\Editor\EditorImgui.h" />
+    <ClInclude Include="Source\Editor\EditorState.h" />
+    <ClInclude Include="Source\Editor\EditorTypes.h" />
+    <ClInclude Include="Source\Editor\EditorUtils.h" />
+    <ClInclude Include="Source\Editor\Grid.h" />
+    <ClInclude Include="Source\Editor\InputManager.h" />
+    <ClInclude Include="Source\Editor\PaintManager.h" />
+    <ClInclude Include="Source\Editor\Viewport2d.h" />
+    <ClInclude Include="Source\Editor\Viewport3d.h" />
+    <ClInclude Include="Source\Engine\Assertion.h" />
+    <ClInclude Include="Source\Engine\Asset.h" />
+    <ClInclude Include="Source\Engine\AssetDir.h" />
+    <ClInclude Include="Source\Engine\AssetManager.h" />
+    <ClInclude Include="Source\Engine\AssetRef.h" />
+    <ClInclude Include="Source\Engine\Assets\Font.h" />
+    <ClInclude Include="Source\Engine\Assets\MaterialBase.h" />
+    <ClInclude Include="Source\Engine\Assets\MaterialInstance.h" />
+    <ClInclude Include="Source\Engine\Assets\Material.h" />
+    <ClInclude Include="Source\Engine\Assets\MaterialLite.h" />
+    <ClInclude Include="Source\Engine\Assets\ParticleSystem.h" />
+    <ClInclude Include="Source\Engine\Assets\ParticleSystemInstance.h" />
+    <ClInclude Include="Source\Engine\Assets\Scene.h" />
+    <ClInclude Include="Source\Engine\Assets\SkeletalMesh.h" />
+    <ClInclude Include="Source\Engine\Assets\SoundWave.h" />
+    <ClInclude Include="Source\Engine\Assets\StaticMesh.h" />
+    <ClInclude Include="Source\Engine\Assets\Texture.h" />
+    <ClInclude Include="Source\Engine\AudioManager.h" />
+    <ClInclude Include="Source\Engine\CameraFrustum.h" />
+    <ClInclude Include="Source\Engine\Clock.h" />
+    <ClInclude Include="Source\Engine\Constants.h" />
+    <ClInclude Include="Source\Engine\Datum.h" />
+    <ClInclude Include="Source\Engine\EmbeddedFile.h" />
+    <ClInclude Include="Source\Engine\Engine.h" />
+    <ClInclude Include="Source\Engine\EngineTypes.h" />
+    <ClInclude Include="Source\Engine\Enums.h" />
+    <ClInclude Include="Source\Engine\Factory.h" />
+    <ClInclude Include="Source\Engine\InputDevices.h" />
+    <ClInclude Include="Source\Engine\Line.h" />
+    <ClInclude Include="Source\Engine\Log.h" />
+    <ClInclude Include="Source\Engine\Maths.h" />
+    <ClInclude Include="Source\Engine\NetDatum.h" />
+    <ClInclude Include="Source\Engine\NetFunc.h" />
+    <ClInclude Include="Source\Engine\NetMsg.h" />
+    <ClInclude Include="Source\Engine\NetworkManager.h" />
+    <ClInclude Include="Source\Engine\Nodes\3D\Audio3d.h" />
+    <ClInclude Include="Source\Engine\Nodes\3D\Box3d.h" />
+    <ClInclude Include="Source\Engine\Nodes\3D\Camera3d.h" />
+    <ClInclude Include="Source\Engine\Nodes\3D\Capsule3d.h" />
+    <ClInclude Include="Source\Engine\Nodes\3D\DirectionalLight3d.h" />
+    <ClInclude Include="Source\Engine\Nodes\3D\Light3d.h" />
+    <ClInclude Include="Source\Engine\Nodes\3D\Mesh3d.h" />
+    <ClInclude Include="Source\Engine\Nodes\3D\Particle3d.h" />
+    <ClInclude Include="Source\Engine\Nodes\3D\PointLight3d.h" />
+    <ClInclude Include="Source\Engine\Nodes\3D\Primitive3d.h" />
+    <ClInclude Include="Source\Engine\Nodes\3D\ShadowMesh3d.h" />
+    <ClInclude Include="Source\Engine\Nodes\3D\SkeletalMesh3d.h" />
+    <ClInclude Include="Source\Engine\Nodes\3D\Sphere3d.h" />
+    <ClInclude Include="Source\Engine\Nodes\3D\StaticMesh3d.h" />
+    <ClInclude Include="Source\Engine\Nodes\3D\TestSpinner.h" />
+    <ClInclude Include="Source\Engine\Nodes\3D\TextMesh3d.h" />
+    <ClInclude Include="Source\Engine\Nodes\3D\Node3d.h" />
+    <ClInclude Include="Source\Engine\Nodes\Node.h" />
+    <ClInclude Include="Source\Engine\Nodes\Widgets\ArrayWidget.h" />
+    <ClInclude Include="Source\Engine\Nodes\Widgets\Button.h" />
+    <ClInclude Include="Source\Engine\Nodes\Widgets\Canvas.h" />
+    <ClInclude Include="Source\Engine\Nodes\Widgets\CheckBox.h" />
+    <ClInclude Include="Source\Engine\Nodes\Widgets\ComboBox.h" />
+    <ClInclude Include="Source\Engine\Nodes\Widgets\Console.h" />
+    <ClInclude Include="Source\Engine\Nodes\Widgets\ModalList.h" />
+    <ClInclude Include="Source\Engine\Nodes\Widgets\Poly.h" />
+    <ClInclude Include="Source\Engine\Nodes\Widgets\PolyRect.h" />
+    <ClInclude Include="Source\Engine\Nodes\Widgets\Quad.h" />
+    <ClInclude Include="Source\Engine\Nodes\Widgets\Selector.h" />
+    <ClInclude Include="Source\Engine\Nodes\Widgets\StatsOverlay.h" />
+    <ClInclude Include="Source\Engine\Nodes\Widgets\Text.h" />
+    <ClInclude Include="Source\Engine\Nodes\Widgets\TextField.h" />
+    <ClInclude Include="Source\Engine\Nodes\Widgets\VerticalList.h" />
+    <ClInclude Include="Source\Engine\Nodes\Widgets\Widget.h" />
+    <ClInclude Include="Source\Engine\Profiler.h" />
+    <ClInclude Include="Source\Engine\Property.h" />
+    <ClInclude Include="Source\Engine\Rect.h" />
+    <ClInclude Include="Source\Engine\Renderer.h" />
+    <ClInclude Include="Source\Engine\RTTI.h" />
+    <ClInclude Include="Source\Engine\Script.h" />
+    <ClInclude Include="Source\Engine\ScriptAutoReg.h" />
+    <ClInclude Include="Source\Engine\ScriptFunc.h" />
+    <ClInclude Include="Source\Engine\ScriptMacros.h" />
+    <ClInclude Include="Source\Engine\ScriptUtils.h" />
+    <ClInclude Include="Source\Engine\Stream.h" />
+    <ClInclude Include="Source\Engine\TableDatum.h" />
+    <ClInclude Include="Source\Engine\TimerManager.h" />
+    <ClInclude Include="Source\Engine\Utilities.h" />
+    <ClInclude Include="Source\Engine\Vertex.h" />
+    <ClInclude Include="Source\Engine\World.h" />
+    <ClInclude Include="Source\Graphics\Graphics.h" />
+    <ClInclude Include="Source\Graphics\GraphicsConstants.h" />
+    <ClInclude Include="Source\Graphics\GraphicsTypes.h" />
+    <ClInclude Include="Source\Graphics\GraphicsUtils.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\PostProcessChain.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\PostProcess\BlurPass.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\PostProcess\PostProcessPass.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\PostProcess\TonemapPass.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\RenderPassCache.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\VramAllocator.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\Buffer.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\DescriptorPool.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\DescriptorSet.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\DestroyQueue.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\Image.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\DescriptorLayoutCache.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\MaterialPipelineCache.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\MultiBuffer.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\Pipeline.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\PipelineCache.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\PipelineConfigs.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\RayTracer.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\Shader.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\VulkanConstants.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\VulkanContext.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\VulkanTypes.h" />
+    <ClInclude Include="Source\Graphics\Vulkan\VulkanUtils.h" />
+    <ClInclude Include="Source\Input\Input.h" />
+    <ClInclude Include="Source\Input\InputConstants.h" />
+    <ClInclude Include="Source\Input\InputTypes.h" />
+    <ClInclude Include="Source\Input\InputUtils.h" />
+    <ClInclude Include="Source\LuaBindings\AssetManager_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Asset_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Audio3d_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Audio_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Box3d_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Button_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Camera3d_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Canvas_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Capsule3d_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\CheckBox_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\ComboBox_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\MaterialBase_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Material_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\NodeRef_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Node_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\DirectionalLight3d_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Engine_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Font_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Input_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Light3d_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Log_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\LuaTypeCheck.h" />
+    <ClInclude Include="Source\LuaBindings\LuaUtils.h" />
+    <ClInclude Include="Source\LuaBindings\MaterialInstance_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\MaterialLite_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Maths_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Mesh3d_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Misc_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Network_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Particle3d_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\ParticleSystemInstance_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\ParticleSystem_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\PointLight3d_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\PolyRect_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Poly_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Primitive3d_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Quad_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Rect_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Renderer_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Scene_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Script_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Selector_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\ShadowMesh3d_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\SkeletalMesh3d_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\SkeletalMesh_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\SoundWave_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Sphere3d_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\StaticMesh3d_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\StaticMesh_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Stream_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\System_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\TextField_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\TextMesh3d_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Texture_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Text_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\TimerManager_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Node3d_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Vector_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\VerticalList_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\Widget_Lua.h" />
+    <ClInclude Include="Source\LuaBindings\World_Lua.h" />
+    <ClInclude Include="Source\Network\NetPlatformEpic.h" />
+    <ClInclude Include="Source\Network\NetPlatformSteam.h" />
+    <ClInclude Include="Source\Network\NetSession.h" />
+    <ClInclude Include="Source\Network\Network.h" />
+    <ClInclude Include="Source\Network\NetworkConstants.h" />
+    <ClInclude Include="Source\Network\NetworkTypes.h" />
+    <ClInclude Include="Source\Network\NetPlatform.h" />
+    <ClInclude Include="Source\ObjectRef.h" />
+    <ClInclude Include="Source\System\System.h" />
+    <ClInclude Include="Source\System\SystemConstants.h" />
+    <ClInclude Include="Source\System\SystemTypes.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

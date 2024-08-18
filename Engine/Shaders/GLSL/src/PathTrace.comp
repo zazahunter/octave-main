@@ -1,0 +1,82 @@
+#version 450
+
+#extension GL_ARB_separate_shader_objects : enable
+
+#include "Common.glsl"
+#include "RayTraceTypes.glsl"
+
+layout (set = 0, binding = 0) uniform GlobalUniformBuffer 
+{
+    GlobalUniforms global;
+};
+
+layout (set = 1, binding = 0) uniform RayTraceUniformBuffer 
+{
+	RayTraceUniforms rayTrace;
+};
+
+layout(std140, set = 1, binding = 1) buffer RtTriangleData  
+{
+   RayTraceTriangle triangles[];
+};
+
+layout(std140, set = 1, binding = 2) buffer RtMeshData  
+{
+   RayTraceMesh meshes[];
+};
+
+layout(std140, set = 1, binding = 3) buffer RtLightData  
+{
+   RayTraceLight lights[];
+};
+
+layout (set = 1, binding = 4) uniform sampler2D textures[PATH_TRACE_MAX_TEXTURES];
+
+layout (set = 1, binding = 5, rgba8) uniform image2D outputImage;
+
+layout(std140, set = 1, binding = 6) buffer BakeVertexData  
+{
+   LightBakeVertex bakeVertices[];
+};
+
+#include "RayTraceCommon.glsl"
+
+layout (local_size_x = 8, local_size_y = 8) in;
+void main()
+{
+    uint threadIndex = gl_GlobalInvocationID.x + gl_GlobalInvocationID.y * uint(global.mScreenDimensions.x + 0.5);
+    uint rngState = threadIndex + (global.mFrameNumber * 719393);
+
+    vec2 uv = (gl_GlobalInvocationID.xy - global.mSceneViewport.xy) / global.mSceneViewport.zw;
+
+    if (uv.x < 0.0 || uv.x > 1.0 ||
+        uv.y < 0.0 || uv.y > 1.0)
+    {
+        // Outside of the viewport, write black and early-exit.
+        imageStore(outputImage, ivec2(gl_GlobalInvocationID.xy), vec4(0,0,0,1));
+        return;
+    }
+
+    vec3 viewPointVS = vec3(2.0 * (uv - 0.5) * vec2(global.mNearHalfWidth, -global.mNearHalfHeight), -global.mNearDist);
+    vec3 viewPoint = (global.mViewToWorld * vec4(viewPointVS, 1.0)).xyz;
+
+    Ray ray;
+    ray.mOrigin = global.mViewPosition.xyz;
+    ray.mDirection = normalize(viewPoint - ray.mOrigin);
+
+    vec3 totalLight = vec3(0,0,0);
+    uint numRays = rayTrace.mRaysPerThread;
+
+    for (uint i = 0; i < numRays; ++i)
+    {
+        totalLight += PathTrace(ray, rngState);
+    }
+
+    vec3 newColor = totalLight / numRays;
+    vec3 oldColor = imageLoad(outputImage, ivec2(gl_GlobalInvocationID.xy)).rgb;
+
+    float newWeight = 1.0 / (rayTrace.mAccumulatedFrames + 1);
+    vec3 outColor = mix(oldColor, newColor, newWeight);
+
+    imageStore(outputImage, ivec2(gl_GlobalInvocationID.xy), vec4(outColor,1));
+}

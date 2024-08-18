@@ -1,0 +1,5 @@
+add_subdirectory(STB)
+add_subdirectory(Assimp)
+add_subdirectory(Bullet)
+add_subdirectory(glm)
+add_subdirectory(Vorbis)

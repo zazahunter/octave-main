@@ -1,0 +1,75 @@
+#version 450
+
+#extension GL_ARB_separate_shader_objects : enable
+
+#include "Common.glsl"
+#include "RayTraceTypes.glsl"
+
+layout (set = 0, binding = 0) uniform GlobalUniformBuffer 
+{
+    GlobalUniforms global;
+};
+
+layout (set = 1, binding = 0) uniform RayTraceUniformBuffer 
+{
+	RayTraceUniforms rayTrace;
+};
+
+layout(std140, set = 1, binding = 1) buffer RtTriangleData  
+{
+   RayTraceTriangle triangles[];
+};
+
+layout(std140, set = 1, binding = 2) buffer RtMeshData  
+{
+   RayTraceMesh meshes[];
+};
+
+layout(std140, set = 1, binding = 3) buffer RtLightData  
+{
+   RayTraceLight lights[];
+};
+
+layout (set = 1, binding = 4) uniform sampler2D textures[PATH_TRACE_MAX_TEXTURES];
+
+layout(std140, set = 1, binding = 6) buffer BakeVertexData  
+{
+   LightBakeVertex bakeVertices[];
+};
+
+#include "RayTraceCommon.glsl"
+
+layout (local_size_x = 32) in;
+void main()
+{
+    uint threadIndex = gl_GlobalInvocationID.x;
+    uint rngState = threadIndex + (global.mFrameNumber * 719393);
+    
+    LightBakeVertex bakeVert = bakeVertices[threadIndex];
+
+    //Path trace indirect light
+    Ray ray;
+    ray.mOrigin = bakeVert.mPosition + bakeVert.mNormal * 0.01;
+    ray.mDirection = normalize(bakeVert.mNormal  + RandomDirection(rngState));
+
+    vec3 totalLight = vec3(0,0,0);
+    uint numRays = rayTrace.mRaysPerThread;
+
+    for (uint i = 0; i < numRays; ++i)
+    {
+        totalLight += PathTrace(ray, rngState);
+    }
+
+    vec3 newColor = totalLight / numRays;
+
+    if (rayTrace.mAccumulatedFrames == 0)
+    {
+        bakeVertices[threadIndex].mIndirectLight = vec4(newColor, 1.0);
+    }
+    else
+    {
+        vec3 oldColor = bakeVert.mIndirectLight.rgb;
+        float newWeight = 1.0 / (rayTrace.mAccumulatedFrames + 1);
+        bakeVertices[threadIndex].mIndirectLight = vec4(mix(oldColor, newColor, newWeight), 1.0);
+    }
+}
